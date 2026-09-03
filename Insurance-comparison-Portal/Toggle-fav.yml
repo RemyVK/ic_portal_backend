@@ -1,0 +1,21 @@
+info:
+  name: Toggle-fav
+  type: http
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/toggle-favorite
+  body:
+    type: json
+    data: |-
+      {
+        "userId": 1,
+        "offerId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
