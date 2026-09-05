@@ -35,6 +35,8 @@ class SearchResultsController
         try {
             $sql = "
                 SELECT O.name,
+                    O.id,
+                    O.link
                     O.total_covered_amount,
                     O.monthly_payment,
                     O.duration,
